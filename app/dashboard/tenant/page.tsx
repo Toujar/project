@@ -7,16 +7,17 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Search, Home, CreditCard, FileText, Eye } from 'lucide-react';
+import { Property } from '@/types/property';
 
-interface Property {
-  _id: string;
-  title: string;
-  location: string;
-  rent: number;
-  rooms: number;
-  bathrooms: number;
-  images: string[];
-}
+// interface Property {
+//   _id: string;
+//   title: string;
+//   location: string;
+//   rent: number;
+//   rooms: number;
+//   bathrooms: number;
+//   images: string[];
+// }
 
 interface Request {
   _id: string;

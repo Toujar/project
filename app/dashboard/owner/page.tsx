@@ -6,21 +6,22 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import PropertyModal from '@/components/PropertyModal';
+import { Property } from '@/types/property';
 import { Building, DollarSign, Users, AlertCircle, Plus, Edit, Trash2, Eye, Check, X } from 'lucide-react';
 
-interface Property {
-  _id: string;
-  title: string;
-  location: string;
-  rent: number;
-  rooms: number;
-  bathrooms: number;
-  area?: number;
-  description: string;
-  images: string[];
-  availability: boolean;
-  amenities: string[];
-}
+// interface Property {
+//   _id: string;
+//   title: string;
+//   location: string;
+//   rent: number;
+//   rooms: number;
+//   bathrooms: number;
+//   area?: number;
+//   description: string;
+//   images: string[];
+//   availability: boolean;
+//   amenities: string[];
+// }
 
 interface Request {
   _id: string;
