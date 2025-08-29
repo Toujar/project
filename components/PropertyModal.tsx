@@ -26,7 +26,8 @@ interface Property {
 interface PropertyModalProps {
   isOpen: boolean;
   onClose: () => void;
-  onSave: (property: Property) => void;
+  // onSave: (property: Property) => void;
+  onSave: (property: Property) => Promise<void>;
   property?: Property | null;
   isLoading?: boolean;
 }
@@ -106,9 +107,9 @@ export default function PropertyModal({ isOpen, onClose, onSave, property, isLoa
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    onSave(formData);
+    await onSave(formData);
   };
 
   return (
