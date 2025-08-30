@@ -13,7 +13,7 @@
 //   amenities: string[];
 // }
 export interface Property {
-  _id?: string;  // optional because new property may not have it yet
+  _id: string;  // optional because new property may not have it yet
   title: string;
   location: string;
   rent: number;
